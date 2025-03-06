@@ -1,6 +1,6 @@
 # BaiTapNhom_LTNC
 
-## 🚀 TEMPLATE FOR A MAZE PROBLEM  
+## 🚀TEMPLATE FOR A MAZE PROBLEM  
 **Presented by Group 15 - LTNC**  
 
 ---
@@ -70,7 +70,7 @@ Bài toán bản chất là tìm **đường đi ngắn nhất trên đồ thị
 
 **Kết quả:**
 - Gọi `findShortestPath(maze, 0, 0, 0)` từ **(0,0) với `steps = 0`**.
-- Nếu kết quả là **INF** → ❌ Không có đường đi.
+- Nếu kết quả là **INF** → Không có đường đi.
 - Nếu là **số cụ thể**, đó là **độ dài đường đi ngắn nhất**.
 
 ### **Độ phức tạp:**
@@ -79,7 +79,7 @@ Bài toán bản chất là tìm **đường đi ngắn nhất trên đồ thị
 
 ---
 ## **Code**
-src
+https://github.com/NguyenHuy1804/BaiTapMaze_LTNC/blob/master/src/main.cpp
 ---
 ## **Test Cases**
 
@@ -93,6 +93,20 @@ Nhap me cung (0: trong, 1: chuong ngai vat):
 0 0 0 0
 0 1 1 0
 ```
+Quá trình chạy:
+
+Bắt đầu từ (0,0), đi sang phải (0,1), (0,2), (0,3).
+
+Không thể đi xuống (1,3), quay lại (0,2).
+
+Đi xuống (1,2), (2,2), (2,1), (2,0).
+
+Đi xuống (3,0), nhưng bị kẹt.
+
+Quay lại (2,0), thử (2,1), (2,2), (2,3).
+
+--> Đi xuống (3,3), đến đích!
+
 ### **🔹 Test 2:**
 ```
 Nhap kich thuoc me cung N: 3
@@ -102,6 +116,14 @@ Nhap me cung (0: trong, 1: chuong ngai vat):
 1 1 0
 0 0 0
 ```
+Quá trình chạy:
+
+Bắt đầu từ (0,0), đi sang phải (0,1).
+
+Không có cách nào đi xuống vì chướng ngại vật.
+
+--> Không thể đi đến (2,2).
+
 ### **🔹 Test 3:**
 ```
 Nhap kich thuoc me cung N: 3
@@ -111,6 +133,13 @@ Nhap me cung (0: trong, 1: chuong ngai vat):
 0 0 0
 0 0 0
 ```
+Quá trình chạy:
+
+Đi theo mọi đường có thể.
+
+Luôn có đường ngắn nhất là 4 bước.
+
+--> Kết quả: Do dai duong di ngan nhat: 4.
 
 ---
 ## **Advantages & Disadvantages**
