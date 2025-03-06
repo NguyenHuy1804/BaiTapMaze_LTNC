@@ -1,5 +1,3 @@
-# BaiTapNhom_LTNC
-
 ## 🚀TEMPLATE FOR A MAZE PROBLEM  
 **Presented by Group 15 - LTNC**  
 
@@ -26,6 +24,8 @@ Tìm đường đi ngắn nhất trong mê cung có chướng ngại vật.
 - Kết hợp memo hóa để tránh tính trùng.
 
 ---
+## **Report Video**
+link
 ## **Demonstration & Analysis**
 
 ### **Tính chất:**
@@ -154,3 +154,4 @@ Luôn có đường ngắn nhất là 4 bước.
 - **Nguy cơ tràn ngăn xếp do gọi đệ quy quá sâu**.
 - **DFS chưa tối ưu** vì có thể đi vào đường cụt trước khi tìm thấy đường ngắn nhất.
 - **Cải thiện:** Dùng **BFS (Breadth-First Search)** thay vì DFS.
+
