@@ -25,7 +25,7 @@ Tìm đường đi ngắn nhất trong mê cung có chướng ngại vật.
 
 ---
 ## **Report Video**
-link
+**[Bấm Vào Đây Để Xem Video](https://youtu.be/IIOZsEyKaeA)**
 ## **Demonstration & Analysis**
 
 ### **Tính chất:**
