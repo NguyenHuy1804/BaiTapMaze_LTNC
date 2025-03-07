@@ -79,7 +79,7 @@ Bài toán bản chất là tìm **đường đi ngắn nhất trên đồ thị
 
 ---
 ## **Code**
-https://github.com/NguyenHuy1804/BaiTapMaze_LTNC/blob/master/src/main.cpp
+[https://github.com/NguyenHuy1804/BaiTapMaze_LTNC/blob/master/src/main.cpp](https://github.com/NguyenHuy1804/BaiTapMaze_LTNC/blob/master/main.cpp)
 ---
 ## **Test Cases**
 
