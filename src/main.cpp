@@ -5,10 +5,11 @@ using namespace std;
 
 const int INF = 1e9; // Giá trị vô cực để đại diện cho không thể đi đến
 
-// Mảng hướng đi: Lên, Xuống, Trái, Phải
+// Mảng hướng đi:               Lên, Xuống, Trái, Phải
 int dx[4] = { -1, 1, 0, 0 };
 int dy[4] = { 0, 0, -1, 1 };
 
+// Khởi tạo:
 vector<vector<int>> memo;       // Bảng nhớ lưu khoảng cách ngắn nhất đến mỗi ô
 vector<vector<bool>> visited;   // Đánh dấu các ô đã đi qua
 int N;                          // Kích thước mê cung
