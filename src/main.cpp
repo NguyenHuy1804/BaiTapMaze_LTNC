@@ -16,8 +16,8 @@ int N;                          // Kích thước mê cung
 // Kiểm tra xem ô (x, y) có hợp lệ để đi vào không
 bool isValid(int x, int y, vector<vector<int>>& maze) {
     return (x >= 0 && x < N && y >= 0 && y < N) // Không vượt biên
-        && (maze[x][y] == 0)                    // Không phải chướng ngại vật
-        && (!visited[x][y]);                    // Chưa được đi qua
+        && (maze[x][y] == 0)                // Không phải chướng ngại vật
+        && (!visited[x][y]);                // Chưa được đi qua
 }
 
 // Đệ quy tìm đường đi ngắn nhất từ (x, y) đến (N-1, N-1)
@@ -25,15 +25,15 @@ int findShortestPath(vector<vector<int>>& maze, int x, int y, int steps) {
     // Nếu đi vào ô không hợp lệ, trả về INF
     if (!isValid(x, y, maze)) return INF;
 
-    // Nếu đã đến đích, trả về số bước hiện tại nhưng thuật toán vẫn được kiểm tra để tìm steps ngắn hơn
+    // Nếu đã đến đích, trả về số bước hiện tại
     if (x == N - 1 && y == N - 1) return steps;
 
-    // Nếu đã có kết quả tối ưu hơn, không cần tiếp tục
-    if (memo[x][y] <= steps) return memo[x][y];
+    // Nếu đã có đường đi ngắn hơn đến ô này, không tiếp tục
+    if (memo[x][y] <= steps) return INF;
 
     // Đánh dấu đã đi qua ô này
     visited[x][y] = true;
-    memo[x][y] = steps; // Lưu số bước tại ô này
+    memo[x][y] = steps; // Cập nhật giá trị khoảng cách nhỏ nhất
 
     int minPath = INF; // Biến lưu giá trị nhỏ nhất tìm được
 
@@ -61,6 +61,12 @@ int main() {
     for (int i = 0; i < N; i++)
         for (int j = 0; j < N; j++)
             cin >> maze[i][j];
+
+    // Kiểm tra nếu ô xuất phát hoặc đích là chướng ngại vật
+    if (maze[0][0] == 1 || maze[N - 1][N - 1] == 1) {
+        cout << "Khong co duong di" << endl;
+        return 0;
+    }
 
     // Khởi tạo bảng nhớ và mảng đánh dấu
     memo.assign(N, vector<int>(N, INF));
