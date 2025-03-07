@@ -3,9 +3,9 @@
 
 ---
 ## Members:
-- 👤 **Nguyen Quang Huy** - `24022803` (Representative)
-- 👤 Vu Manh Hung - `24022796`
-- 👤 Phan Van Thai Hung - `24022798`
+- 👤 **Nguyễn Quang Huy** - `24022803` (Representative)
+- 👤 Vũ Mạnh Hùng - `24022796`
+- 👤 Phan Văn Thái Hưng - `24022798`
 - 👤 Trịnh Thị Vân - `24022842`
 - 👤 Hoà Tùng Dương - `24022780`
 
