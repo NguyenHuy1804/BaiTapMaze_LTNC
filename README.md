@@ -78,8 +78,8 @@ Bài toán bản chất là tìm **đường đi ngắn nhất trên đồ thị
 - **Không gian:** `O(N²)` – **lưu ma trận memo, cộng thêm `O(N²)` cho ngăn xếp đệ quy**.
 
 ---
-## **Code**
-[https://github.com/NguyenHuy1804/BaiTapMaze_LTNC/blob/master/src/main.cpp](https://github.com/NguyenHuy1804/BaiTapMaze_LTNC/blob/master/main.cpp)
+## 📌 Code  
+[Bấm vào đây để xem mã nguồn](https://github.com/NguyenHuy1804/BaiTapMaze_LTNC/tree/master/src)
 ---
 ## **Test Cases**
 
